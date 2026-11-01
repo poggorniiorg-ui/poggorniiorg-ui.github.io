@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">КМЗ №1 Заявки</string>
+    <string name="launch_url">https://poggorniiorg-ui.github.io/kmz-zakaz/</string>
+    <string name="asset_statements" translatable="false">[{\"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": {\"namespace\": \"web\", \"site\": \"https://poggorniiorg-ui.github.io\"}}]</string>
+    <color name="bar">#F3F5F8</color>
+</resources>

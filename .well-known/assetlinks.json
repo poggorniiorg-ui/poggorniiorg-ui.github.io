@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ru.kmz1.zakaz",
+      "sha256_cert_fingerprints": ["65:2C:CB:D1:35:35:68:DF:7B:27:C7:82:53:EF:D0:3A:E4:4B:7D:21:F8:1C:39:B7:02:D3:40:28:34:AC:85:FD"]
+    }
+  }
+]

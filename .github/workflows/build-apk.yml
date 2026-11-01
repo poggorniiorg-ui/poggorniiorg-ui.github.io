@@ -1,0 +1,52 @@
+name: Сборка APK
+
+on:
+  push:
+    branches: [main]
+    paths: ['android/**', '.github/workflows/build-apk.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+
+      - name: Сборка
+        id: build
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          gradle -p android assembleRelease --no-daemon --stacktrace 2>&1 | tee build.log
+
+      - name: Выложить результат в ветку apk-build
+        run: |
+          mkdir -p /tmp/out
+          cp build.log /tmp/out/build.log
+          if [ "${{ steps.build.outcome }}" = "success" ]; then
+            cp android/app/build/outputs/apk/release/app-release-unsigned.apk /tmp/out/app-release-unsigned.apk
+            echo "ok" > /tmp/out/status.txt
+          else
+            echo "fail" > /tmp/out/status.txt
+          fi
+          echo "${GITHUB_SHA}" >> /tmp/out/status.txt
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout --orphan apk-build
+          git rm -rf --quiet .
+          cp /tmp/out/* .
+          git add -A
+          git commit -m "APK build ${GITHUB_SHA}"
+          git push -f origin apk-build
