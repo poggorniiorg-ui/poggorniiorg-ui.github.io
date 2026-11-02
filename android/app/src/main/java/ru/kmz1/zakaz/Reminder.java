@@ -59,11 +59,26 @@ final class Reminder {
         am.cancel(pi);
         if (!Prefs.on(c)) return;
         long at = next(Prefs.hour(c), Prefs.minute(c));
-        if (Build.VERSION.SDK_INT >= 23) {
-            am.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, pi);
-        } else {
-            am.set(AlarmManager.RTC_WAKEUP, at, pi);
+        boolean exact = Build.VERSION.SDK_INT < 31 || am.canScheduleExactAlarms();
+        try {
+            if (exact && Build.VERSION.SDK_INT >= 23) {
+                am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, pi);
+            } else if (exact) {
+                am.setExact(AlarmManager.RTC_WAKEUP, at, pi);
+            } else {
+                am.setWindow(AlarmManager.RTC_WAKEUP, at, 10 * 60 * 1000L, pi);
+            }
+        } catch (SecurityException e) {
+            am.setWindow(AlarmManager.RTC_WAKEUP, at, 10 * 60 * 1000L, pi);
         }
+    }
+
+    /** Текст «следующее напоминание: вт 03.11 в 09:52». */
+    static String nextText(Context c) {
+        if (!Prefs.on(c)) return "Напоминание выключено";
+        java.text.SimpleDateFormat f = new java.text.SimpleDateFormat("EEEE, d MMMM 'в' HH:mm",
+                new java.util.Locale("ru"));
+        return "Следующее напоминание: " + f.format(new java.util.Date(next(Prefs.hour(c), Prefs.minute(c))));
     }
 
     static void ensureChannel(Context c) {

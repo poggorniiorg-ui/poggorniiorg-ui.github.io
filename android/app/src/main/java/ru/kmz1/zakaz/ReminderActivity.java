@@ -19,12 +19,14 @@ import java.util.Locale;
 public class ReminderActivity extends Activity {
     static final String EXTRA_FIRST = "first";
     private static final int REQ_NOTIF = 7;
+    private static final int REQ_TEST = 8;
 
     private boolean first;
     private int hour;
     private int minute;
     private Switch sw;
     private Button timeBtn;
+    private android.widget.TextView nextTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,26 @@ public class ReminderActivity extends Activity {
 
         Ui.button(this, box, first ? "Включить и продолжить" : "Сохранить", true)
                 .setOnClickListener(v -> save());
+        nextTv = Ui.text(this, box, Reminder.nextText(this));
+
+        Ui.button(this, box, "Проверить уведомление сейчас", false).setOnClickListener(v -> {
+            if (Build.VERSION.SDK_INT >= 33
+                    && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, REQ_TEST);
+                return;
+            }
+            Reminder.show(this);
+            Toast.makeText(this, "Уведомление отправлено — проверьте шторку", Toast.LENGTH_SHORT).show();
+        });
+        Ui.text(this, box, "Не приходит? На Xiaomi, Redmi, POCO, Huawei, Honor: в настройках приложения "
+                + "включите «Автозапуск» и «Уведомления», а в «Контроль активности» / «Батарея» "
+                + "выберите «Нет ограничений».");
+        Ui.button(this, box, "Открыть настройки приложения", false).setOnClickListener(v -> {
+            Intent s = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                    Uri.parse("package:" + getPackageName()));
+            startActivity(s);
+        });
         if (first) {
             Ui.button(this, box, "Не сейчас", false).setOnClickListener(v -> {
                 Prefs.save(this, false, hour, minute);
@@ -90,6 +112,11 @@ public class ReminderActivity extends Activity {
     @Override
     public void onRequestPermissionsResult(int code, String[] perms, int[] res) {
         super.onRequestPermissionsResult(code, perms, res);
+        if (code == REQ_TEST) {
+            if (res.length > 0 && res[0] == PackageManager.PERMISSION_GRANTED) Reminder.show(this);
+            else Toast.makeText(this, "Уведомления запрещены в настройках", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (code != REQ_NOTIF) return;
         boolean granted = res.length > 0 && res[0] == PackageManager.PERMISSION_GRANTED;
         if (!granted) {
@@ -106,7 +133,8 @@ public class ReminderActivity extends Activity {
             Toast.makeText(this, String.format(Locale.US,
                     "Напоминание включено: вс, вт, чт в %02d:%02d", hour, minute), Toast.LENGTH_LONG).show();
         }
-        next();
+        if (nextTv != null) nextTv.setText(Reminder.nextText(this));
+        if (first) next();
     }
 
     private void next() {
