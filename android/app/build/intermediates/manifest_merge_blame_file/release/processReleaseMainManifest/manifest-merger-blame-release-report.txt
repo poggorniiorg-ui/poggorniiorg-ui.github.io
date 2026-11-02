@@ -1,0 +1,271 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ru.kmz1.zakaz"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:5:5-79
+12-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:6:5-77
+13-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:7:5-81
+14-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission
+15-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:8:5-106
+16        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+16-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:8:22-76
+17        android:maxSdkVersion="32" />
+17-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:8:77-103
+18    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+18-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:9:5-74
+18-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:9:22-71
+19
+20    <queries>
+20-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:11:5-18:15
+21        <intent>
+21-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:12:9-14:18
+22            <action android:name="android.support.customtabs.action.CustomTabsService" />
+22-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:13:13-90
+22-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:13:21-87
+23        </intent>
+24        <intent>
+24-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:15:9-17:18
+25            <action android:name="android.intent.action.DIAL" />
+25-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:16:13-65
+25-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:16:21-62
+26        </intent>
+27        <intent>
+27-->[com.google.androidbrowserhelper:androidbrowserhelper:2.5.0] /home/runner/.gradle/caches/transforms-4/d73cfbfdb04f37b8374370eafce8a693/transformed/androidbrowserhelper-2.5.0/AndroidManifest.xml:27:9-33:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:90:17-69
+28-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:90:25-66
+29
+30            <category android:name="android.intent.category.BROWSABLE" />
+30-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:92:17-78
+30-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:92:27-75
+31
+32            <data android:scheme="https" />
+32-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:93:17-95:55
+32-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:93:23-45
+33        </intent>
+34    </queries>
+35
+36    <application
+36-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:20:5-125:19
+37        android:allowBackup="true"
+37-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:21:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.1.0] /home/runner/.gradle/caches/transforms-4/78fde55e5a0e9d2c0c2f9f07cc5a3201/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+39        android:extractNativeLibs="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:22:9-43
+41        android:label="@string/app_name"
+41-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:24:9-41
+42        android:roundIcon="@mipmap/ic_launcher"
+42-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:23:9-48
+43        android:supportsRtl="false"
+43-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:25:9-36
+44        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+44-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:26:9-72
+45        <meta-data
+45-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:28:9-30:59
+46            android:name="asset_statements"
+46-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:29:13-44
+47            android:resource="@string/asset_statements" />
+47-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:30:13-56
+48
+49        <!-- Точка входа: ярлыки, напоминание, «Нет связи» -->
+50        <activity
+50-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:33:9-46:20
+51            android:name="ru.kmz1.zakaz.MainActivity"
+51-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:34:13-41
+52            android:exported="true"
+52-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:35:13-36
+53            android:label="@string/app_name"
+53-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:36:13-45
+54            android:noHistory="true"
+54-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:38:13-37
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+55-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:37:13-72
+56            <intent-filter>
+56-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:39:13-42:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:40:17-69
+57-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:40:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:41:17-77
+59-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:41:27-74
+60            </intent-filter>
+61
+62            <meta-data
+62-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:43:13-45:53
+63                android:name="android.app.shortcuts"
+63-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:44:17-53
+64                android:resource="@xml/shortcuts" />
+64-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:45:17-50
+65        </activity>
+66        <activity
+66-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:48:9-51:48
+67            android:name="ru.kmz1.zakaz.OfflineActivity"
+67-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:49:13-44
+68            android:exported="false"
+68-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:50:13-37
+69            android:label="@string/app_name" />
+69-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:51:13-45
+70        <activity
+70-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:53:9-56:48
+71            android:name="ru.kmz1.zakaz.ReminderActivity"
+71-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:54:13-45
+72            android:exported="false"
+72-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:55:13-37
+73            android:label="@string/app_name" />
+73-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:56:13-45
+74
+75        <!-- Сайт заказов в Trusted Web Activity -->
+76        <activity
+76-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:59:9-97:20
+77            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+77-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:60:13-84
+78            android:exported="true"
+78-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:61:13-36
+79            android:label="@string/app_name"
+79-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:62:13-45
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+80-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:63:13-72
+81            <meta-data
+81-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:64:13-66:54
+82                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+82-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:65:17-78
+83                android:value="@string/launch_url" />
+83-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:66:17-51
+84            <meta-data
+84-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:67:13-69:49
+85                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+85-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:68:17-83
+86                android:resource="@color/bar" />
+86-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:69:17-46
+87            <meta-data
+87-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:70:13-72:49
+88                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+88-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:71:17-87
+89                android:resource="@color/bar" />
+89-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:72:17-46
+90            <meta-data
+90-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:73:13-75:44
+91                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+91-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:74:17-85
+92                android:value="portrait" />
+92-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:75:17-41
+93            <meta-data
+93-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:76:13-78:55
+94                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+94-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:77:17-88
+95                android:resource="@drawable/splash" />
+95-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:78:17-52
+96            <meta-data
+96-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:79:13-81:54
+97                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+97-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:80:17-97
+98                android:resource="@color/splashBg" />
+98-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:81:17-51
+99            <meta-data
+99-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:82:13-84:39
+100                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+100-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:83:17-98
+101                android:value="300" />
+101-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:84:17-36
+102            <meta-data
+102-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:85:13-87:62
+103                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+103-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:86:17-90
+104                android:value="ru.kmz1.zakaz.fileprovider" />
+104-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:87:17-59
+105
+106            <intent-filter android:autoVerify="true" >
+106-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:89:13-96:29
+106-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:89:28-53
+107                <action android:name="android.intent.action.VIEW" />
+107-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:90:17-69
+107-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:90:25-66
+108
+109                <category android:name="android.intent.category.DEFAULT" />
+109-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:91:17-76
+109-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:91:27-73
+110                <category android:name="android.intent.category.BROWSABLE" />
+110-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:92:17-78
+110-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:92:27-75
+111
+112                <data
+112-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:93:17-95:55
+113                    android:host="poggorniiorg-ui.github.io"
+113-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:94:21-61
+114                    android:pathPrefix="/kmz-zakaz"
+114-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:95:21-52
+115                    android:scheme="https" />
+115-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:93:23-45
+116            </intent-filter>
+117        </activity>
+118        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+118-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:99:9-90
+118-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:99:19-87
+119        <activity
+119-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:101:9-103:62
+120            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+120-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:102:13-91
+121            android:configChanges="orientation|screenSize" />
+121-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:103:13-59
+122
+123        <provider
+123-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:105:9-113:20
+124            android:name="androidx.core.content.FileProvider"
+124-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:106:13-62
+125            android:authorities="ru.kmz1.zakaz.fileprovider"
+125-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:107:13-61
+126            android:exported="false"
+126-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:108:13-37
+127            android:grantUriPermissions="true" >
+127-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:109:13-47
+128            <meta-data
+128-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:110:13-112:53
+129                android:name="android.support.FILE_PROVIDER_PATHS"
+129-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:111:17-67
+130                android:resource="@xml/filepaths" />
+130-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:112:17-50
+131        </provider>
+132
+133        <receiver
+133-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:115:9-124:20
+134            android:name="ru.kmz1.zakaz.ReminderReceiver"
+134-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:116:13-45
+135            android:exported="false" >
+135-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:117:13-37
+136            <intent-filter>
+136-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:118:13-123:29
+137                <action android:name="android.intent.action.BOOT_COMPLETED" />
+137-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:119:17-79
+137-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:119:25-76
+138                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+138-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:120:17-84
+138-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:120:25-81
+139                <action android:name="android.intent.action.TIME_SET" />
+139-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:121:17-73
+139-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:121:25-70
+140                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+140-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:122:17-81
+140-->/home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/AndroidManifest.xml:122:25-78
+141            </intent-filter>
+142        </receiver>
+143    </application>
+144
+145</manifest>

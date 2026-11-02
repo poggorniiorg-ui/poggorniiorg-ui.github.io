@@ -1,0 +1,10 @@
+ru.kmz1.zakaz.app-core-1.1.0-0 /home/runner/.gradle/caches/transforms-4/78fde55e5a0e9d2c0c2f9f07cc5a3201/transformed/core-1.1.0/res
+ru.kmz1.zakaz.app-androidbrowserhelper-2.5.0-1 /home/runner/.gradle/caches/transforms-4/d73cfbfdb04f37b8374370eafce8a693/transformed/androidbrowserhelper-2.5.0/res
+ru.kmz1.zakaz.app-browser-1.4.0-2 /home/runner/.gradle/caches/transforms-4/fa9d0c35c75c28b12199094d767511e9/transformed/browser-1.4.0/res
+ru.kmz1.zakaz.app-pngs-3 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/build/generated/res/pngs/release
+ru.kmz1.zakaz.app-resValues-4 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/build/generated/res/resValues/release
+ru.kmz1.zakaz.app-packageReleaseResources-5 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+ru.kmz1.zakaz.app-packageReleaseResources-6 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+ru.kmz1.zakaz.app-release-7 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/build/intermediates/merged_res/release/mergeReleaseResources
+ru.kmz1.zakaz.app-main-8 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/main/res
+ru.kmz1.zakaz.app-release-9 /home/runner/work/poggorniiorg-ui.github.io/poggorniiorg-ui.github.io/android/app/src/release/res

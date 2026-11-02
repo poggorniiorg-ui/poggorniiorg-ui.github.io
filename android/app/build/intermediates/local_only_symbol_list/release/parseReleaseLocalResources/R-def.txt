@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color bar
+color splashBg
+drawable ic_notify
+drawable ic_notify_big
+drawable ic_sc_bell
+drawable ic_sc_call
+drawable ic_sc_new
+drawable ic_sc_repeat
+drawable splash
+mipmap ic_launcher
+string app_name
+string asset_statements
+string launch_url
+string sc_call
+string sc_call_short
+string sc_new
+string sc_reminder
+string sc_repeat
+string sc_repeat_short
+xml filepaths
+xml shortcuts
