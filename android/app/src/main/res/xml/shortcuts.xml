@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="repeat" android:enabled="true" android:icon="@drawable/ic_sc_repeat"
+        android:shortcutShortLabel="@string/sc_repeat_short" android:shortcutLongLabel="@string/sc_repeat">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="ru.kmz1.zakaz"
+            android:targetClass="ru.kmz1.zakaz.MainActivity"
+            android:data="https://poggorniiorg-ui.github.io/kmz-zakaz/?go=repeat" />
+    </shortcut>
+    <shortcut android:shortcutId="new" android:enabled="true" android:icon="@drawable/ic_sc_new"
+        android:shortcutShortLabel="@string/sc_new" android:shortcutLongLabel="@string/sc_new">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="ru.kmz1.zakaz"
+            android:targetClass="ru.kmz1.zakaz.MainActivity"
+            android:data="https://poggorniiorg-ui.github.io/kmz-zakaz/" />
+    </shortcut>
+    <shortcut android:shortcutId="call" android:enabled="true" android:icon="@drawable/ic_sc_call"
+        android:shortcutShortLabel="@string/sc_call_short" android:shortcutLongLabel="@string/sc_call">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="ru.kmz1.zakaz"
+            android:targetClass="ru.kmz1.zakaz.MainActivity" android:data="kmz1://call" />
+    </shortcut>
+    <shortcut android:shortcutId="reminder" android:enabled="true" android:icon="@drawable/ic_sc_bell"
+        android:shortcutShortLabel="@string/sc_reminder" android:shortcutLongLabel="@string/sc_reminder">
+        <intent android:action="android.intent.action.VIEW" android:targetPackage="ru.kmz1.zakaz"
+            android:targetClass="ru.kmz1.zakaz.MainActivity" android:data="kmz1://reminder" />
+    </shortcut>
+</shortcuts>
